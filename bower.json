@@ -1,0 +1,28 @@
+{
+  "name": "toast-bootstrap",
+  "version": "1.1.1",
+  "homepage": "https://github.com/ericprieto/toast-bootstrap",
+  "authors": [
+    "Eric Prieto <ericprieto@live.com>"
+  ],
+  "main": "toast-bootstrap.js",
+  "keywords": [
+    "jquery",
+    "bootstrap",
+    "growl",
+    "toast",
+    "popup"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0"
+  }
+}
