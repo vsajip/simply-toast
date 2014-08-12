@@ -1,11 +1,11 @@
 {
-  "name": "toast-bootstrap",
+  "name": "simply-toast",
   "version": "1.1.1",
-  "homepage": "https://github.com/ericprieto/toast-bootstrap",
+  "homepage": "https://github.com/ericprieto/simply-toast",
   "authors": [
     "Eric Prieto <ericprieto@live.com>"
   ],
-  "main": "toast-bootstrap.js",
+  "main": "simply-toast.js",
   "keywords": [
     "jquery",
     "bootstrap",
