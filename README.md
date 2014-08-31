@@ -1,7 +1,7 @@
 simply-toast
 ===
 
-Usage instructions and samples on (http://ericprieto.github.io/simply-toast/)[http://ericprieto.github.io/simply-toast/].
+Usage instructions and samples on http://ericprieto.github.io/simply-toast
 
 * * *
 
