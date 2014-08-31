@@ -13,3 +13,7 @@ All css styles were extracted from bootstrap, so, if you already use bootstrap, 
 * * *
 
 If anybody has interest on a jquery-less version, just open an issue and I'll look into that.
+
+* * *
+
+Based on http://ifightcrime.github.io/bootstrap-growl, but unlike bootstrapGrowl, Simply Toast does not need bootstrap.js nor bootstrap.css.
