@@ -1,13 +1,12 @@
-#simply-toast
-run `bower install` before you open the sample file.
+simply-toast
+===
 
-Bootstrap (css only) and jQuery (or equivalent) are required.
+Usage instructions and samples on (http://ericprieto.github.io/simply-toast/)[http://ericprieto.github.io/simply-toast/].
 
-```
-$.simplyToast('success', 'This is a success message!');
-$.simplyToast('warning', 'This is a warning message!');
-$.simplyToast('info', 'This is a info message!');
-$.simplyToast('danger', 'This is a danger message!');
+* * *
 
-$.simplyToast.clear(); //To clear current messages
-```
+All css styles were extracted from bootstrap, so, if you already use bootstrap, you don't need simply-toast.css
+
+* * *
+
+If anybody has interest on a jquery-less version, just open an issue and I'll look into that.
