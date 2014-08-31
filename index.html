@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-    <title>Simply Toast by ericprieto</title>
-  </head>
+		<title>Simply Toast by ericprieto</title>
+	</head>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Simply Toast</h1>
-        <h2>Simple toast messages for jQuery (and friends)</h2>
-        <a href="https://github.com/ericprieto/simply-toast" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+	<body>
+		<header>
+			<div class="inner">
+				<h1>Simply Toast</h1>
+				<h2>Simple toast messages for jQuery (and friends)</h2>
+				<a href="https://github.com/ericprieto/simply-toast" class="button"><small>View project on</small>GitHub</a>
+			</div>
+		</header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a name="simply-toast" class="anchor" href="#simply-toast"><span class="octicon octicon-link"></span></a>simply-toast</h1>
+		<div id="content-wrapper">
+			<div class="inner clearfix">
+				<section id="main-content">
+					<h1><a name="simply-toast" class="anchor" href="#simply-toast"><span class="octicon octicon-link"></span></a>simply-toast</h1>
+					<p>jQuery (or equivalent) is required, all css styles were extracted from bootstrap, so, if you already use bootstrap, you don't need simply-toast.css</p>
+					<h2>Samples (click on the code block)</h2>
+					<p><a href="javascript:$.simplyToast('This is a success message!', 'success');"><code>$.simplyToast('This is a success message!', 'success');</code></a></p>
+					<p><a href="javascript:$.simplyToast('This is a danger message!', 'danger');"><code>$.simplyToast('This is a danger message!', 'danger');</code></a></p>
+					<p><a href="javascript:$.simplyToast('This is an info message!', 'info');"><code>$.simplyToast('This is a info message!', 'info');</code></a></p>
+					<p><a href="javascript:$.simplyToast('This is also an info message!');"><code>$.simplyToast('This is also an info message!'); //'info' is the default type</code></a></p>
+					<p><a href="javascript:$.simplyToast('This is a warning message!', 'warning');"><code>$.simplyToast('This is a warning message!', 'warning');</code></a></p>
+					<h2>Methods</h2>
+<pre><code>// To create a toast message
+$.simplyToast(message, type='info', options);
 
-<p>run <code>bower install</code> before you open the sample file.</p>
+// To manually remove a toast message
+$.simplyToast.remove(jqueryEl);
 
-<p>Bootstrap (css only) and jQuery (or equivalent) are required.</p>
-
-<pre><code>$.simplyToast('success', 'This is a success message!');
-$.simplyToast('warning', 'This is a warning message!');
-$.simplyToast('info', 'This is a info message!');
-$.simplyToast('danger', 'This is a danger message!');
-
-$.simplyToast.clear(); //To clear current messages
+// To extend default options
+$.extend(true, $.simplyToast.defaultOptions,
+{
+   'type': 'success'
+});
 </code></pre>
-        </section>
+					<h2>Available options and default values</h2>
+<pre><code>appendTo: "body",
+customClass: false,
+type: "info",
+offset:
+{
+   from: "top",
+   amount: 20
+},
+align: "right",
+minWidth: 250,
+maxWidth: 450,
+delay: 4000,
+allowDismiss: true,
+spacing: 10</code></pre>
 
-        <aside id="sidebar">
-          <a href="https://github.com/ericprieto/simply-toast/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/ericprieto/simply-toast/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+<p>If anybody has interest on a jquery-less version, just open an issue and I'll look into that.</p>
+				</section>
 
-          <p class="repo-owner"><a href="https://github.com/ericprieto/simply-toast"></a> is maintained by <a href="https://github.com/ericprieto">ericprieto</a>.</p>
+				<aside id="sidebar">
+					<a href="https://github.com/ericprieto/simply-toast/zipball/master" class="button">
+						<small>Download</small>
+						.zip file
+					</a>
+					<a href="https://github.com/ericprieto/simply-toast/tarball/master" class="button">
+						<small>Download</small>
+						.tar.gz file
+					</a>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+					<p class="repo-owner"><a href="https://github.com/ericprieto/simply-toast"></a> is maintained by <a href="https://github.com/ericprieto">ericprieto</a>.</p>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-52557804-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+					<p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+				</aside>
+			</div>
+		</div>
 
-  </body>
+						<script type="text/javascript">
+						var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+						document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+					</script>
+					<script type="text/javascript">
+						try {
+							var pageTracker = _gat._getTracker("UA-52557804-2");
+						pageTracker._trackPageview();
+						} catch(err) {}
+					</script>
+
+	</body>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/simply-toast/simply-toast.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bower_components/simply-toast/simply-toast.min.css">
 </html>
