@@ -38,10 +38,10 @@
 					<p><a href="javascript:$.simplyToast('This is a warning message!', 'warning');"><code>$.simplyToast('This is a warning message!', 'warning');</code></a></p>
 					<h2>Methods</h2>
 <pre><code>// To create a toast message
-$.simplyToast(message, type='info', options);
+var toast = $.simplyToast(message, type='info', options);
 
 // To manually remove a toast message
-$.simplyToast.remove(jqueryEl);
+$.simplyToast.remove(toast);
 
 // To extend default options
 $.extend(true, $.simplyToast.defaultOptions,
