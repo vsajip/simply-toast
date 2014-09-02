@@ -123,6 +123,8 @@ aside#sidebar {
 
 aside#sidebar p.repo-owner,
 aside#sidebar p.repo-owner a {
+  text-align: justify;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
