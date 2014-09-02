@@ -4,7 +4,7 @@ Simple toast messages for jQuery (and friends)
 
 * * *
 
-Usage instructions and samples on http://ericprieto.github.io/simply-toast
+Usage instructions and samples on http://ericprieto.com/freebie/simply-toast/
 
 * * *
 
