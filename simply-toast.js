@@ -59,7 +59,7 @@
 			setTimeout(removeAlert, options.delay);
 		}
 
-		$alert.find("[data-dismiss=\"alert\"]").click(removeAlert);
+		$alert.find("[data-dismiss=\"alert\"]").removeAttr('data-dismiss').click(removeAlert);
 
 		return $alert;
 	};
