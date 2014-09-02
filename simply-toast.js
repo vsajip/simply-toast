@@ -54,7 +54,7 @@
 			$.simplyToast.remove($alert);
 		}
 
-		if(options.allowDismiss && options.delay > 0)
+		if(options.delay > 0)
 		{
 			setTimeout(removeAlert, options.delay);
 		}
