@@ -13,7 +13,7 @@
 		var offsetSum = options.offset.amount;
 		$('.simply-toast').each(function()
 		{
-			return offsetSum = Math.max(offsetSum, parseInt($(this).css(options.offset.from)) + $(this).outerHeight() + options.spacing);
+			return offsetSum = Math.max(offsetSum, parseInt($(this).css(options.offset.from)) + this.offsetHeight + options.spacing);
 		});
 
 		var css =
