@@ -47,8 +47,9 @@
 				$alert.css("right", "20px");
 		}
 		
-		$alert.fadeIn();
-
+		if($alert.fadeIn) $alert.fadeIn();
+		else $alert.css({display: 'block', opacity: 1});
+		
 		function removeAlert()
 		{
 			$.simplyToast.remove($alert);
@@ -66,10 +67,17 @@
 
 	$.simplyToast.remove = function($alert)
 	{
-		return $alert.fadeOut(function()
+		if($alert.fadeOut)
+		{
+			return $alert.fadeOut(function()
+			{
+				return $alert.remove();
+			});
+		}
+		else
 		{
 			return $alert.remove();
-		});	
+		}
 	};
 
 	$.simplyToast.defaultOptions = {
