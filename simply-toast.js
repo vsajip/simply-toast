@@ -11,10 +11,19 @@
 			html += '</div>';
 
 		var offsetSum = options.offset.amount;
-		$('.simply-toast').each(function()
-		{
-			return offsetSum = Math.max(offsetSum, parseInt($(this).css(options.offset.from)) + this.offsetHeight + options.spacing);
-		});
+        if(!options.stack)
+		{   $('.simply-toast').each(function()
+            {
+                return offsetSum = Math.max(offsetSum, parseInt($(this).css(options.offset.from)) + this.offsetHeight + options.spacing);
+            });
+        }
+        else
+        {
+            $(options.appendTo).find('.simply-toast').each(function()
+            {
+                return offsetSum = Math.max(offsetSum, parseInt($(this).css(options.offset.from)) + this.offsetHeight + options.spacing);
+            });
+        }
 
 		var css =
 		{
@@ -82,6 +91,7 @@
 
 	$.simplyToast.defaultOptions = {
 		appendTo: "body",
+        stack: false,
 		customClass: false,
 		type: "info",
 		offset:
